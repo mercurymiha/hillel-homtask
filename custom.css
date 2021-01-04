@@ -1,6 +1,21 @@
-#text {
-    color: aquamarine;
+p:nth-child(1) {
+    color: blue;
+    text-indent: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
 }
-.color {
-    color: beige;
+p:nth-child(2) {
+    color: blueviolet;
+    text-indent: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+p:nth-child(3) {
+    color: brown;
+    text-indent: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+p::first-letter {
+    color: black;
 }
