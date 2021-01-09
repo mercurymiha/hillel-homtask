@@ -41,7 +41,22 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-.logocat {
-    float: left;
-    width: 100px;
+header img {
+	width: 200px;
+}
+.logo-wrap {
+	float: left;
+}
+ul li {
+	float: left;
+}
+header nav {
+	float: left;
+}
+.clearfix {
+	clear: both;
+}
+header {
+	background: red;
+	overflow: hidden;
 }
