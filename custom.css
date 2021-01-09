@@ -52,11 +52,13 @@ ul li {
 }
 header nav {
 	float: left;
+	margin-top: 50px;
+	margin-left: 600px;
+	text-indent: 50px;
 }
 .clearfix {
 	clear: both;
 }
 header {
-	background: red;
 	overflow: hidden;
 }
