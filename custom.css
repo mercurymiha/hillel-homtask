@@ -47,7 +47,7 @@ header img {
 .logo-wrap {
 	float: left;
 }
-ul li {
+nav ul li {
 	float: left;
 }
 header nav {
@@ -61,4 +61,8 @@ header nav {
 }
 header {
 	overflow: hidden;
+}
+ul.imgcat li {
+	float: left;
+	margin: 20px;
 }
