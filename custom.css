@@ -61,8 +61,32 @@ header nav {
 }
 header {
 	overflow: hidden;
+	background-color:green;
 }
 ul.imgcat li {
 	float: left;
 	margin: 20px;
+}
+.imgcat {
+	background-color: chartreuse;
+	overflow: hidden;
+}
+.cattitle {
+	background-color: aqua;
+	float: left;
+	width: 70%;
+}
+.catinside {
+	float: right;
+	margin: 30px;
+	width:calc(30% - 60px);
+}
+.footercat {
+	float: left;
+	margin: 30px;
+}
+.footertitle {
+	background-color: red;
+	float: right;
+	width: 100%;
 }
