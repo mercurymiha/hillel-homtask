@@ -41,52 +41,87 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-header img {
-	width: 200px;
+header nav ul li {
+	float: right;
+	text-indent: 80px;
 }
-.logo-wrap {
+header a {
 	float: left;
 }
-nav ul li {
-	float: left;
-}
-header nav {
-	float: left;
-	margin-top: 50px;
-	margin-left: 600px;
-	text-indent: 50px;
+header {
+	overflow: hidden;
 }
 .clearfix {
 	clear: both;
 }
-header {
-	overflow: hidden;
-	background-color:green;
-}
-ul.imgcat li {
-	float: left;
-	margin: 20px;
-}
-.imgcat {
-	background-color: chartreuse;
-	overflow: hidden;
-}
-.cattitle {
-	background-color: aqua;
-	float: left;
-	width: 70%;
-}
-.catinside {
+.clearfix img {
 	float: right;
-	margin: 30px;
-	width:calc(30% - 60px);
 }
-.footercat {
+.clearfix h1, .clearfix p {
 	float: left;
-	margin: 30px;
 }
-.footertitle {
-	background-color: red;
+section .box ul li {
+	float: left;
+	margin: 6px;
+}
+.box {
+	overflow: hidden;
+}
+section .box ul li:nth-child(4) {
+	clear: left;
+}
+section .box ul {
+	overflow: auto;
+}
+section .partner ul li {
+	float: left;
+	margin-left: 10%;
+}
+.partner {
+	overflow: hidden;
+}
+section .luke ul li {
+	float: left;
+	margin: 6px;
+}
+.luke {
+	overflow: hidden;
+}
+section .luke ul {
+	overflow: auto;
+}
+section .superblog ul li {
+	float: left;
+	margin: 10px;
+}
+.superblog {
+	overflow: hidden;
+}
+section .superblog ul {
+	overflow: auto;
+}
+section form {
+	float: left;
+}
+.contactimg {
 	float: right;
-	width: 100%;
+	width: 50%;
+}
+footer a {
+	float: left;
+}
+footer p {
+	float: left;
+	color: white;
+}
+footer {
+	overflow: hidden;
+	background-color: black;
+}
+section .art ul li {
+	float: left;
+	margin: 6px;
+}
+.art {
+	overflow: hidden;
 }
