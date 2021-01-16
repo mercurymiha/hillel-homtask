@@ -60,25 +60,22 @@ header {
 .clearfix h1, .clearfix p {
 	float: left;
 }
-section .box ul li {
-	float: left;
-	margin: 6px;
-}
 .box {
-	overflow: hidden;
-}
-section .box ul li:nth-child(4) {
-	clear: left;
-}
-section .box ul {
 	overflow: auto;
 }
-section .partner ul li {
+.imgsection1 {
 	float: left;
-	margin-left: 10%;
+	margin: 2px;
+}
+.imgsection1:nth-child(4) {
+	clear: left;
 }
 .partner {
-	overflow: hidden;
+	overflow:auto;
+}
+.imgsection2 {
+	float: left;
+	margin-left: 10%;
 }
 section .luke ul li {
 	float: left;
