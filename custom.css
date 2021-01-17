@@ -77,32 +77,42 @@ header {
 	float: left;
 	margin-left: 10%;
 }
-section .luke ul li {
-	float: left;
-	margin: 6px;
-}
-.luke {
+.luke{
 	overflow: hidden;
+	clear: both;
 }
-section .luke ul {
-	overflow: auto;
-}
-section .superblog ul li {
+.imgsection3 {
 	float: left;
-	margin: 10px;
+	margin: 30px;
+	width: 30%;
 }
 .superblog {
 	overflow: hidden;
+	clear: both;
 }
-section .superblog ul {
-	overflow: auto;
-}
-section form {
+.imgsection4 {
 	float: left;
+	margin: 10px;
+	width: 30%;
+}
+.formfix {
+	overflow: hidden;
+}
+.sectionform {
+	float: left;
+	width: 50%;
 }
 .contactimg {
 	float: right;
 	width: 50%;
+}
+.art {
+	overflow: hidden;
+}
+.imgsection5 {
+	float: left;
+	width: 20%;
+	margin: 3px;
 }
 footer a {
 	float: left;
@@ -114,11 +124,4 @@ footer p {
 footer {
 	overflow: hidden;
 	background-color: black;
-}
-section .art ul li {
-	float: left;
-	margin: 6px;
-}
-.art {
-	overflow: hidden;
 }
