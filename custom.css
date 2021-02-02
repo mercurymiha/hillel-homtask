@@ -41,12 +41,27 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding: 15px;
+}
+.header-logo {
+	float: left;
+	margin-top: 32px;
+}
 header nav ul li {
 	float: right;
 	text-indent: 80px;
+	margin-top: 50px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 15px;
 }
-header a {
-	float: left;
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 60px;
 }
 header {
 	overflow: hidden;
@@ -54,11 +69,49 @@ header {
 .clearfix {
 	clear: both;
 }
-.clearfix img {
-	float: right;
+.sec1 {
+	overflow: hidden;
 }
-.clearfix h1, .clearfix p {
+.sec1-img {
+	float: right;
+	margin-top: 155px;
+	margin-left: 38px;
+	width:calc(50% - 38px);
+	overflow: hidden;
+}
+.sec1-text {
 	float: left;
+	margin-top: 225px;
+	overflow: hidden;
+	width: 50%;
+}
+.sec1-text h1 span {
+	display: block;
+}
+.sec1-text p {
+	margin-top: 42px;
+	margin-bottom: 45px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 22px;
+}
+button {
+	padding-top: 15px;
+	padding-left: 35px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+	border: 0px solid;
+	background-color: #ffe600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+}
+h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 58px;
+	margin-top: 127px;
 }
 .box {
 	overflow: auto;
@@ -71,11 +124,26 @@ header {
 	clear: left;
 }
 .partner {
-	overflow:auto;
+	width: 100%;
+	overflow: hidden;
+	background-color: #fdfdfd;
 }
 .imgsection2 {
 	float: left;
-	margin-left: 10%;
+	padding: 15px;
+	margin-right:55px;
+}
+.sectiontext h2 {
+	margin-bottom: 70px;
+}
+.sectiontext p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 21px;
+}
+.sectiontext p span {
+	display: block;
 }
 .luke{
 	overflow: hidden;
@@ -83,8 +151,33 @@ header {
 }
 .imgsection3 {
 	float: left;
-	margin: 30px;
-	width: 30%;
+	margin-right: 30px;
+	width:calc(33.3% - 38px);
+}
+.imgsection3:nth-child(3) {
+	border: 4px #fdfdfd solid;
+}
+.luke h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	margin-top: 106px;
+	margin-bottom: 47px;
+	margin-left: 54px;
+}
+.luke p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+	margin-left: 49px;
+}
+.luke p span {
+	display: block;
+}
+.luke-span2 {
+	margin-top: 56px;
+	margin-bottom: 83px;
 }
 .superblog {
 	overflow: hidden;
