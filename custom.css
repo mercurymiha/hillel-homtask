@@ -123,6 +123,12 @@ h2 {
 .imgsection1:nth-child(4) {
 	clear: left;
 }
+.show-button {
+	margin: 0 auto;
+	display: block;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
 .partner {
 	width: 100%;
 	overflow: hidden;
@@ -151,6 +157,7 @@ h2 {
 }
 .imgsection3 {
 	float: left;
+	margin-top: 68px;
 	margin-right: 30px;
 	width:calc(33.3% - 38px);
 }
@@ -179,25 +186,90 @@ h2 {
 	margin-top: 56px;
 	margin-bottom: 83px;
 }
+.our-h2 {
+	margin-bottom: 70px;
+}
+.our-p {
+	margin-bottom: 70px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.our-p span {
+	display: block;
+}
 .superblog {
 	overflow: hidden;
 	clear: both;
 }
 .imgsection4 {
 	float: left;
-	margin: 10px;
-	width: 30%;
+	margin-right: 30px;
+	width:calc(33.3% - 30px);
+}
+.imgsection4 h3 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 25px;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 800;
+}
+.imgsection4 p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	margin-left: 21px;
+	line-height: 22px;
+}
+.imgsection4 p span {
+	display: block;
+	margin-top: 25px;
+	margin-left: 10px;
+}
+.contact-h2 {
+	margin-top: 125px;
+	margin-bottom: 70px;
+}
+.contact-p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 22px;
+	margin-bottom: 70px;
+}
+.contact-p span {
+	display: block;
+}
+.send-legend {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 30px;
+	font-weight: 800;
+	margin-top: 35px;
+	margin-bottom: 40px;
+}
+.send-input {
+	display: block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	width: 100%;
+	margin-top: 10px;
+	padding: 20px;
+	border: none;
+	background-color: #fdfdfd;
 }
 .formfix {
 	overflow: hidden;
 }
 .sectionform {
 	float: left;
-	width: 50%;
+	width: 45%;
 }
 .contactimg {
 	float: right;
-	width: 50%;
+	width:50%;
 }
 .art {
 	overflow: hidden;
