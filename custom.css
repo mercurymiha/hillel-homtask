@@ -97,10 +97,7 @@ header {
 	line-height: 22px;
 }
 button {
-	padding-top: 15px;
-	padding-left: 35px;
-	padding-right: 25px;
-	padding-bottom: 25px;
+	padding: 15px 25px 25px 35px;
 	border: 0px solid;
 	background-color: #ffe600;
 	font-family: 'Montserrat', sans-serif;
@@ -186,6 +183,10 @@ h2 {
 	margin-top: 56px;
 	margin-bottom: 83px;
 }
+.OurBlog-section {
+	overflow: hidden;
+	background-color: #fdfdfd;
+}
 .our-h2 {
 	margin-bottom: 70px;
 }
@@ -200,7 +201,6 @@ h2 {
 	display: block;
 }
 .superblog {
-	overflow: hidden;
 	clear: both;
 }
 .imgsection4 {
@@ -267,17 +267,55 @@ h2 {
 	float: left;
 	width: 45%;
 }
+.button-form {
+	margin-top: 10px;
+	padding: 15px 25px 25px 35px;
+	border: 0px solid;
+	background-color: #ffe600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	font-weight: 500;
+}
+textarea {
+	resize: none;
+  }
 .contactimg {
 	float: right;
 	width:50%;
 }
 .art {
+	margin-top: 70px;
 	overflow: hidden;
+}
+.imgsection5 img {
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 30px;
 }
 .imgsection5 {
 	float: left;
-	width: 20%;
-	margin: 3px;
+	width: 33.3%;
+	text-align: center;
+}
+.imgsection5 p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 20px;
+}
+.imgsection5 p span {
+	display: block;
+}
+.icon-fawer {
+	margin-top: 80px;
+	margin-bottom: 75px;
+	overflow: hidden;
+}
+.icon-fawer a {
+
+}
+.icon-faw {
+	font-size: 30px;
 }
 footer a {
 	float: left;
@@ -288,5 +326,5 @@ footer p {
 }
 footer {
 	overflow: hidden;
-	background-color: black;
+	background-color: #1e1e1e;
 }
