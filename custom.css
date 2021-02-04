@@ -151,15 +151,13 @@ h2 {
 .luke{
 	overflow: hidden;
 	clear: both;
+	margin-bottom: 120px;
 }
 .imgsection3 {
 	float: left;
 	margin-top: 68px;
 	margin-right: 30px;
 	width:calc(33.3% - 38px);
-}
-.imgsection3:nth-child(3) {
-	border: 4px #fdfdfd solid;
 }
 .luke h3 {
 	font-family: 'Montserrat', sans-serif;
@@ -201,7 +199,9 @@ h2 {
 	display: block;
 }
 .superblog {
+	overflow: hidden;
 	clear: both;
+	margin-bottom: 120px;
 }
 .imgsection4 {
 	float: left;
