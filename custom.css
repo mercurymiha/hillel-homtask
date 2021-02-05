@@ -58,6 +58,12 @@ header nav ul li {
 	font-weight: 500;
 	font-size: 15px;
 }
+header nav ul li a {
+	color: #1e1e1e;
+	text-decoration: none;
+}
+header nav ul li a:hover {
+}
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
@@ -310,6 +316,10 @@ textarea {
 	margin-top: 80px;
 	margin-bottom: 75px;
 	overflow: hidden;
+}
+.icon-fawer a {
+	text-decoration: none;
+	color: #262626;
 }
 .icon-faw {
 	font-size: 30px;
