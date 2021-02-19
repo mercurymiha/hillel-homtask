@@ -6,13 +6,16 @@
     <meta name="description" content="Agency">
     <meta name="keywords" content="Hello!!! We Are Creative Digital Agency.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.">
     <title>Agency</title>
-    <link rel="stylesheet" href="./custom.css">
+    <link rel="stylesheet" href="./style/custom.css">
+
+    <link rel="stylesheet" href="./style/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl.theme.default.min.css">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="header-top">
         <div class="container">
                 <div class="header-logo">
                     <a href="index.html"><img src="./img/LOGO.png" alt="Logo company"></a>
@@ -20,9 +23,9 @@
                 <div class="headernav">
             <nav>
                 <ul>
-                    <li><a href="contact">CONTACT</a></li>
-                    <li><a href="blog">BLOG</a></li>
-                    <li><a href="adout">ABOUT</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <li><a href="#blog">BLOG</a></li>
+                    <li><a href="#about">ABOUT</a></li>
                     <li><a href="#work">WORK</a></li>
                 </ul>
             </nav>
@@ -47,32 +50,32 @@
             <div class="container">
                 <h2 id="work">WORK SHOWCASE.</h2>
             <div class="box">
-                <div class="imgsection1"><img src="./img/IMAGE1.png" alt=""></div>
-                <div class="imgsection1"><img src="./img/IMAGE2.png" alt=""></div>
-                <div class="imgsection1"><img src="./img/IMAGE4.png" alt=""></div>
-                <div class="imgsection1"><img src="./img/IMAGE3.png" alt=""></div>
-                <div class="imgsection1"><img src="./img/IMAGE5.png" alt=""></div>
-                <div class="imgsection1"><img src="./img/IMAGE6.png" alt=""></div>
+                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
             </div>
             <button class="show-button">SHOW ME MORE</button>
             </div>
         </section>
         <section class="clearfix">
             <div class="container">
-                <div class="partner">
-                    <div class="imgsection2"><img src="./img/partner1.png" alt=""></div>
-                    <div class="imgsection2"><img src="./img/partner2.png" alt=""></div>
-                    <div class="imgsection2"><img src="./img/partner3.png" alt=""></div>
-                    <div class="imgsection2"><img src="./img/partner4.png" alt=""></div>
-                    <div class="imgsection2"><img src="./img/partner5.png" alt=""></div>
-                    <div class="imgsection2"><img src="./img/partner6.png" alt=""></div>
-                </div>
+                <div class="owl-carousel">
+                    <div><img src="./img/partner1.png" alt=""></div>
+                    <div><img src="./img/partner2.png" alt=""></div>
+                    <div><img src="./img/partner3.png" alt=""></div>
+                    <div><img src="./img/partner4.png" alt=""></div>
+                    <div><img src="./img/partner5.png" alt=""></div>
+                    <div><img src="./img/partner6.png" alt=""></div>
+                  </div>
             </div>
         </section>
         <section  class="clearfix">
             <div class="container">
                 <div class="sectiontext">
-                    <h2>ABOUT US.</h2>
+                    <h2 id="about">ABOUT US.</h2>
                   <p><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</span>
                       ut labore et dolore magna aliqua.</p>
                   </div>
@@ -113,7 +116,7 @@
         <section class="clearfix">
             <div class="OurBlog-section">
                 <div class="container">
-                 <h2 class="our-h2">OUR BLOG.</h2>
+                 <h2 id="blog" class="our-h2">OUR BLOG.</h2>
                    <p class="our-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                 <span>ut labore et dolore magna aliqua.</span></p>
                 <div class="superblog">
@@ -147,7 +150,7 @@
         </section>
         <section class="clearfix">
             <div class="container">
-                <h2 class="contact-h2">CONTACT US.</h2>
+                <h2 id="contact" class="contact-h2">CONTACT US.</h2>
             <p class="contact-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
                <span>ut labore et dolore magna aliqua.</span></p>
                 <div class="clearfix">
@@ -189,11 +192,25 @@
             <div class="footer-contant">
                 <a href="index.html"><img src="./img/Logofooter.png" alt=""></a>
                 <p>© 2020 - Mint,All Right Reserved</p>
+                <div class="back_site">
+                    <p><a href="#header-top">BACK TO TOP</a></p>
+                </div>
             </div>
         </div>
     </footer>
 
 
+    
     <script src="https://kit.fontawesome.com/947eeafe46.js" crossorigin="anonymous"></script>
+
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+  $(".owl-carousel").owlCarousel();
+});
+    </script>
 </body>
 </html>

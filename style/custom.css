@@ -42,7 +42,7 @@ table {
 	border-spacing: 0;
 }
 .container {
-	width: 1170px;
+	max-width: 1170px;
 	margin: 0 auto;
 	padding: 15px;
 }
@@ -118,30 +118,66 @@ h2 {
 	margin-top: 127px;
 }
 .box {
-	overflow: auto;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 170px 300px;
 }
-.imgsection1 {
-	float: left;
-	margin: 2px;
+.box > div {
+	background: #fbe831;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
 }
-.imgsection1:nth-child(4) {
-	clear: left;
+.box div h3 {
+    position: absolute;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	font-size: 30px;
 }
+.box div p {
+    position: absolute;
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 12px;
+}
+.box > div:nth-child(1) {
+	grid-row: 1 / 2;
+}
+.box > div:nth-child(2) {
+	grid-row: 1 / 3;
+}
+.box > div:nth-child(3) {
+	grid-row: 1 / 2;
+}
+.box > div:nth-child(4) {
+	grid-row: 2 / 4;
+}
+.box > div:nth-child(5) {
+	grid-row: 3 / 4;
+}
+.box > div:nth-child(6) {
+	grid-row: 2 / 4;
+}
+.box > div:nth-child(odd) h3 {
+	top: 110px;
+}
+.box > div:nth-child(odd) p {
+	bottom: 120px;
+}
+.box > div:nth-child(even) h3 {
+	top: 210px;
+}
+.box > div:nth-child(even) p {
+	bottom: 220px;
+}
+
 .show-button {
 	margin: 0 auto;
 	display: block;
 	margin-top: 65px;
 	margin-bottom: 65px;
-}
-.partner {
-	width: 100%;
-	overflow: hidden;
-	background-color: #fdfdfd;
-}
-.imgsection2 {
-	float: left;
-	padding: 15px;
-	margin-right:55px;
 }
 .sectiontext h2 {
 	margin-bottom: 70px;
@@ -384,9 +420,13 @@ textarea {
 .icon-fawer {
 	margin-top: 80px;
 	margin-bottom: 75px;
+	margin-left: 420px;
 	overflow: hidden;
 }
 .icon-fawer a {
+	display: block;
+	float: left;
+	width: 20%;
 	text-decoration: none;
 	color: #262626;
 }
@@ -419,4 +459,11 @@ footer {
 	font-weight: 500;
 	margin-top: 20px;
 	margin-left: 25px;
+}
+.back_site {
+	float: right;
+}
+.back_site a {
+	text-decoration: none;
+	color: #fff;
 }
