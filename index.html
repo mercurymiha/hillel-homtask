@@ -15,14 +15,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="header-top">
+    <header id="header-top" class="headerfixed">
         <div class="container">
                 <div class="header-logo">
                     <a href="index.html"><img src="./img/LOGO.png" alt="Logo company"></a>
                 </div>
                 <div class="headernav">
             <nav>
-                <ul>
+                <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+                 <label class="btn-menu" for="hmt">
+                 <span class="first"></span>
+                 <span class="second"></span>
+                 <span class="third"></span>
+                 </label>
+                <ul class="hidden-menu">
                     <li><a href="#contact">CONTACT</a></li>
                     <li><a href="#blog">BLOG</a></li>
                     <li><a href="#about">ABOUT</a></li>
@@ -41,7 +47,7 @@
                     <div class="sec1-text">
                         <h1><span>Hello!!!</span><span>We Are Creative</span>Digital Agency.</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                    <button>SEND MESSAGE</button>
+                    <button class="button-1">SEND MESSAGE</button>
                     </div> 
                     </div>
                 </div>
@@ -49,20 +55,64 @@
         <section class="clearfix">
             <div class="container">
                 <h2 id="work">WORK SHOWCASE.</h2>
-            <div class="box">
-                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
-                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
-                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
-                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
-                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
-                <div><h3>ARTWORK</h3><p>BRANDING</p></div>
-            </div>
+                <div class="tabs">
+                    <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked>
+                    <label for="tab-btn-1">ALL</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                    <label for="tab-btn-2">BRANDING</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-3" value="">
+                    <label for="tab-btn-3">ILLUSTRATION</label>
+                    <input type="radio" name="tab-btn" id="tab-btn-4" value="">
+                    <label for="tab-btn-4">WEB</label>
+                
+                    <div id="content-1">
+                        <div class="box">
+                            <div><div class="hover_img"></div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                        </div>
+                    </div>
+                    <div id="content-2">
+                        <div class="box">
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                        </div>
+                    </div>
+                    <div id="content-3">
+                        <div class="box">
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                        </div>
+                    </div>
+                    <div id="content-4">
+                        <div class="box">
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                            <div><h3>ARTWORK</h3><p>BRANDING</p></div>
+                        </div>
+                      </div>
+                  </div>
             <button class="show-button">SHOW ME MORE</button>
             </div>
         </section>
         <section class="clearfix">
+            <div class="color-partner">
             <div class="container">
-                <div class="owl-carousel">
+                <div class="owl-carousel partner">
                     <div><img src="./img/partner1.png" alt=""></div>
                     <div><img src="./img/partner2.png" alt=""></div>
                     <div><img src="./img/partner3.png" alt=""></div>
@@ -70,6 +120,7 @@
                     <div><img src="./img/partner5.png" alt=""></div>
                     <div><img src="./img/partner6.png" alt=""></div>
                   </div>
+            </div>
             </div>
         </section>
         <section  class="clearfix">
@@ -123,7 +174,7 @@
                     <div class="imgsection4">
                         <div class="super-text_h3">
                             <div class="super-text">
-                                <img src="./img/IMAGE33.png" alt="">
+                                
                             </div>
                             <h3>Read More</h3>
                         </div>
@@ -131,7 +182,7 @@
                     <div class="imgsection4">
                         <div class="super-text_h3">
                             <div class="super-text">
-                                <img src="./img/IMAGE33.png" alt="">
+                                
                             </div>
                             <h3>Read More</h3>
                         </div>
@@ -139,7 +190,7 @@
                     <div class="imgsection4">
                         <div class="super-text_h3">
                             <div class="super-text">
-                                <img src="./img/IMAGE33.png" alt="">
+                               
                             </div>
                             <h3>Read More</h3>
                         </div>
@@ -208,9 +259,22 @@
     <script src="./js/owl.carousel.min.js"></script>
 
     <script>
-        $(document).ready(function(){
-  $(".owl-carousel").owlCarousel();
-});
+  $(".owl-carousel").owlCarousel( {
+      loop:true,
+    margin:35,
+    nav:true,
+    responsive:{
+        0:{
+            items:3
+        },
+        600:{
+            items:5
+        },
+        1000:{
+            items:6
+        }
+    }
+  });
     </script>
 </body>
 </html>

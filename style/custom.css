@@ -44,7 +44,8 @@ table {
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
-	padding: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
 }
 .header-logo {
 	float: left;
@@ -52,7 +53,7 @@ table {
 }
 header nav ul li {
 	float: right;
-	text-indent: 80px;
+	text-indent: 70px;
 	margin-top: 50px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
@@ -62,10 +63,19 @@ header nav ul li a {
 	color: #1e1e1e;
 	text-decoration: none;
 }
+.hidden-menu-ticker {
+    display: none;
+}
+.headerfixed {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
 h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 	font-size: 60px;
+	line-height: 80px;
 }
 header {
 	overflow: hidden;
@@ -80,12 +90,13 @@ header {
 	float: right;
 	margin-top: 155px;
 	margin-left: 38px;
-	width:calc(50% - 38px);
+	width:calc(50% - 48px);
 	overflow: hidden;
 }
 .sec1-text {
 	float: left;
-	margin-top: 225px;
+	margin-top: 205px;
+	margin-left: 10px;
 	overflow: hidden;
 	width: 50%;
 }
@@ -93,15 +104,15 @@ header {
 	display: block;
 }
 .sec1-text p {
-	margin-top: 42px;
-	margin-bottom: 45px;
+	margin-top: 25px;
+	margin-bottom: 35px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
 	font-size: 12px;
-	line-height: 22px;
+	line-height: 30px;
 }
-button {
-	padding: 15px 25px 25px 35px;
+.button-1 {
+	padding: 10px 30px 20px 30px;
 	border: 0px solid;
 	background-color: #ffe600;
 	font-family: 'Montserrat', sans-serif;
@@ -115,7 +126,57 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 800;
 	font-size: 58px;
-	margin-top: 127px;
+	margin-top: 115px;
+	margin-bottom: 55px;
+	margin-left: 10px;
+}
+.tabs>input[type="radio"] {
+    display: none;
+}
+
+.tabs>div {
+    /* скрыть контент по умолчанию */
+    display: none;
+}
+
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+  #tab-btn-1:checked~#content-1,
+  #tab-btn-2:checked~#content-2,
+  #tab-btn-3:checked~#content-3,
+  #tab-btn-4:checked~#content-4 {
+    display: block;
+}
+
+.tabs>label {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: #fff;
+    padding: 2px 27px;
+    font-size: 16px;
+    line-height: 1.5;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+    cursor: pointer;
+    position: relative;
+    top: 1px;
+    margin-bottom: 70px;
+}
+
+.tabs>label:not(:first-of-type) {
+    border-left: none;
+}
+
+.tabs>input[type="radio"]:checked+label {
+    background-color: #ffe100;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+}
+.tabs label {
+	font-family: 'Montserrat';
+	font-weight: 300;
+	font-size: 12px;
 }
 .box {
 	display: grid;
@@ -172,21 +233,48 @@ h2 {
 .box > div:nth-child(even) p {
 	bottom: 220px;
 }
-
+.box div:hover {
+	background-color: #edf2f6;
+}
+.box div:hover h3 {
+	display: none;
+}
+.box div:hover p {
+	display: none;
+}
 .show-button {
+	padding: 15px 50px 20px 50px;
+	border: 0px solid;
+	background-color: #ffe600;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 12px;
+	font-weight: 500;
 	margin: 0 auto;
 	display: block;
 	margin-top: 65px;
 	margin-bottom: 65px;
 }
+.color-partner {
+	overflow: hidden;
+	background-color: #fdfdfd;
+}
+.partner img {
+	max-width: 100px;
+	display: block;
+	margin: 0 auto;
+	padding-top: 125px;
+	padding-bottom: 110px;
+}
 .sectiontext h2 {
-	margin-bottom: 70px;
+	margin-top: 120px;
+	margin-bottom: 55px;
+	margin-left: 15px;
 }
 .sectiontext p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
-	line-height: 21px;
+	line-height: 30px;
 }
 .sectiontext p span {
 	display: block;
@@ -268,14 +356,14 @@ h2 {
 	background-color: #fdfdfd;
 }
 .our-h2 {
-	margin-bottom: 70px;
+	margin-bottom: 45px;
 }
 .our-p {
-	margin-bottom: 70px;
+	margin-bottom: 60px;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
-	line-height: 22px;
+	line-height: 30px;
 }
 .our-p span {
 	display: block;
@@ -321,27 +409,21 @@ h2 {
 	margin-top: 25px;
 	margin-left: 10px;
 }
-.super-text {
-	display: none;
-}
-.imgsection4:hover .super-text {
-	display: block;
-}
 .imgsection4:hover .super-text_h3 h3 {
 	display: none;
 }
 .imgsection4:hover .super-text_h3 {
-	background-color: transparent;
+	background-color: #edf2f6;
 }
 .contact-h2 {
 	margin-top: 125px;
-	margin-bottom: 70px;
+	margin-bottom: 55px;
 }
 .contact-p {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 12px;
 	font-weight: 500;
-	line-height: 22px;
+	line-height: 30px;
 	margin-bottom: 70px;
 }
 .contact-p span {
@@ -351,8 +433,9 @@ h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
 	font-weight: 800;
-	margin-top: 35px;
+	margin-top: 20px;
 	margin-bottom: 40px;
+	margin-left: 10px;
 }
 .send-input {
 	display: block;
@@ -376,12 +459,12 @@ h2 {
 	width: 45%;
 }
 .button-form {
-	margin-top: 10px;
-	padding: 15px 25px 25px 35px;
+	margin-top: 5px;
+	padding: 10px 40px 20px 40px;
 	border: 0px solid;
 	background-color: #ffe600;
 	font-family: 'Montserrat', sans-serif;
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 500;
 }
 .button-form:focus {
@@ -418,15 +501,13 @@ textarea {
 	display: block;
 }
 .icon-fawer {
-	margin-top: 80px;
-	margin-bottom: 75px;
-	margin-left: 420px;
-	overflow: hidden;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	display: flex;
+	justify-content: space-evenly;
+
 }
 .icon-fawer a {
-	display: block;
-	float: left;
-	width: 20%;
 	text-decoration: none;
 	color: #262626;
 }
@@ -466,4 +547,170 @@ footer {
 .back_site a {
 	text-decoration: none;
 	color: #fff;
+}
+@media(max-width: 1100px) {
+	h1 {
+		line-height: 50px;
+		font-size: 50px;
+	}
+	.owl-nav {
+		display: none;
+	}
+}
+@media(max-width: 988px) {
+	h1 {
+		line-height: 40px;
+		font-size: 35px;
+	}
+	.sec1-text p {
+		margin-top: 10px;
+		line-height: 20px;
+		font-size: 10px;
+	}
+	.sec1-img {
+		max-width: 400px;
+		max-height: 400px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+}
+@media(max-width: 914px) {
+	.imgsection3 {
+		
+		width:calc(50% - 38px);
+	}
+	.imgsection3:hover .hover_text {
+		width:calc(50% - 38px);
+	}
+	.imgsection4 {
+		width:calc(50% - 30px);
+	}
+}
+@media(max-width: 748px) {
+	.btn-menu {
+		color: #fff;
+		border:1px solid #222;
+		padding: 5px;
+		position: fixed;
+		top: 35px;
+		left: 25px;
+		cursor: pointer;
+		transition: left .23s;
+		z-index: 3;
+		width: 25px;
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+	}
+	 
+	.btn-menu span {
+		display: block;
+		height: 5px;
+		background-color: #222;
+		margin: 5px 0 0;
+		transition: all .1s linear .23s;
+		position: relative;
+	}
+	 
+	.btn-menu span.first {
+		margin-top: 0;
+	}
+	.hidden-menu {
+		display: block;
+		position: fixed;
+		list-style:none;
+		padding: 50px 10px 10px;
+		margin: 0;
+		box-sizing: border-box;
+		width: 200px;
+		background-color: #fefeff;
+		height: 100%;
+		top: 0;
+		left: -200px;
+		transition: left .2s;
+		z-index: 2;
+		-webkit-transform: translateZ(0);
+		-webkit-backface-visibility: hidden;
+	}
+	 
+	.hidden-menu li {
+		padding:10px 0;
+	}
+	 
+	.hidden-menu li a {
+		font-size:15px;
+		color:#000;
+		padding:6px 0px;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu {
+		left: 160px;
+	}
+	.hidden-menu-ticker:checked ~ .hidden-menu {
+		left: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.first {
+		-webkit-transform: rotate(45deg);
+		top: 10px;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.second {
+		opacity: 0;
+	}
+	.hidden-menu-ticker:checked ~ .btn-menu span.third {
+		-webkit-transform: rotate(-45deg);
+		top: -10px;
+	}
+	.header-logo {
+		float: right;
+	}
+}
+@media(max-width: 668px) {
+	h1 {
+		line-height: 30px;
+		font-size: 25px;
+	}
+	.sec1-text p {
+		margin-bottom: 20px;
+	}
+	.sec1-img {
+		max-width: 300px;
+		max-height: 300px;
+	}
+	.box {
+		grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 170px 300px 300px;
+	}
+	.box > div:nth-child(3) {
+		grid-row: 4 / 5;
+	}
+	.box > div:nth-child(6) {
+		grid-row: 4 / 5;
+	}
+	.box > div:nth-child(6) h3 {
+		top: 110px;
+	}
+	.box > div:nth-child(6) p {
+		bottom: 120px;
+	}
+	.imgsection3 {
+		clear: both;
+		width: 100%;
+	}
+	.imgsection3:hover .hover_text {
+		width: 100%;
+	}
+	.imgsection4 {
+		clear: both;
+		width: 100%;
+	}
+	.sectionform {
+		width: 100%;
+	}
+	.contactimg {
+		margin-top: 10px;
+		clear: both;
+		width: 100%;
+	}
 }
